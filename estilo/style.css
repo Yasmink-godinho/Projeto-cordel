@@ -1,0 +1,113 @@
+@charset "UTF-8" ;
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&family=Sriracha&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+:root{
+    --font1: Verdana, Geneva, Tahoma, sans-serif;
+    --font2: 'Passion One', cursive;
+    --font3:  'Sriracha', cursive;
+}
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html,body{
+    font-family: var(--font1);
+    min-height: 100vh;
+    background-color: darkgray;
+   
+}
+
+header{
+    margin: 0px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    
+}
+
+header > h1{
+    font-size: 10vw; /* 10% da largura da tela a letra se adapta ao tamanho da tela*/
+    font-variant: small-caps;
+    font-family: var(--font2);
+    margin: 0px;
+    padding-top: 50px;
+    
+}
+
+header > p{
+    font-size: 1em;
+    padding-bottom: 50px;
+}
+
+
+a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+section{
+    font-size: 3.5vw; /*A letra aumenta e diminui de acordocom o tamanho da tela, ela se adapta */
+    font-family: var(--font3);
+    padding-top: 10vh;  
+    padding-bottom: 10vh;
+    line-height: 2em; /*Espaçamento entre as linhas*/
+    padding-left: 30px;
+} 
+
+section > p{
+    padding-bottom: 1em;
+}
+
+section.normal{
+    background-color: white;
+    color: black;
+}
+
+section.imagem{
+    background-attachment: fixed;
+    background-color: rgb(51, 51, 51);
+    color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.763) ;
+}
+section.imagem > p {
+    /*width: 70vw;*/
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.350);
+    padding: 8px;
+    text-shadow: 2px 2px 0px black;
+}  
+
+section#s2{
+    background-position: right center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url('../imagens/background001.jpg');
+}
+
+section#s4{
+ 
+    background-position: right center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url('../imagens/background002.jpg');
+}
+footer{
+    margin: 0px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 8px;
+}
